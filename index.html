@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>WorldTime API Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+#output {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 24px;
+}
+
+    </style>
+  </head>
+  <body>
+    <h1>WorldTime API Example</h1>
+    <form>
+      <label for="timezone">Select a timezone:</label>
+      <select id="timezone"></select>
+      <button type="button" onclick="getTime()">Get Time</button>
+    </form>
+    <div id="output"></div>
+    <script src="fetch.js"></script>
+    <script>
+      populateTimezones();
+    </script>
+  </body>
+  
+</html>
